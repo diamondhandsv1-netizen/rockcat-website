@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10120d">
+<meta name="description" content="Rockcat — small cat, big rock energy. Meet the mascot, join the community, and verify official token links.">
+<title>ROCKCAT — Small Cat. Big Rock Energy.</title>
+<style>
+:root{--bg:#0b0d0a;--panel:#151912;--lime:#c7ff35;--lime2:#a6e51f;--text:#f5f7ef;--muted:#aeb5a5;--line:#30382a;--blue:#16d8ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% 0%,#26351b 0%,transparent 35%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid #ffffff12}
+.brand{display:flex;align-items:center;gap:10px;font-weight:1000;letter-spacing:1px;font-size:1.25rem}.brand img{width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid var(--lime)}
+.brand span{color:var(--lime)}.navlinks{display:flex;gap:26px;color:#d6dccd;font-size:.92rem}.navlinks a:hover{color:var(--lime)}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:13px 19px;border-radius:12px;background:var(--lime);color:#14190b;font-weight:900;border:1px solid var(--lime);transition:.2s;cursor:pointer}.btn:hover{transform:translateY(-2px);background:#d9ff77}.btn.outline{background:transparent;color:var(--text);border-color:#65714f}.btn.small{padding:10px 14px;font-size:.86rem}
+.hero{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:40px;padding:70px 0 78px}.eyebrow{color:var(--lime);font-size:.8rem;letter-spacing:3px;font-weight:900;text-transform:uppercase}.hero h1{font-size:clamp(3.2rem,8vw,6.4rem);line-height:.88;letter-spacing:-5px;margin:18px 0 20px;font-weight:1000}.hero h1 span{color:var(--lime);display:block;text-shadow:0 0 28px #b7ff3530}.hero p{color:var(--muted);font-size:1.1rem;line-height:1.75;max-width:500px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.tagline{font-weight:900;font-size:1rem;letter-spacing:.6px;margin-top:25px}.tagline span{color:var(--lime)}
+.launch-badge{display:inline-block;margin-top:20px;padding:10px 13px;border:1px solid #776b2c;background:#332d13;color:#ffe680;border-radius:10px;font-size:.76rem;font-weight:900;letter-spacing:.5px;line-height:1.5}.hero-art{position:relative}.hero-art:before{content:"";position:absolute;inset:7%;border-radius:50%;background:#c7ff3517;filter:blur(40px)}.hero-art img{width:100%;position:relative;display:block;border-radius:25px;border:1px solid #c7ff3540;box-shadow:0 20px 70px #0009}
+.ticker{border-block:1px solid var(--line);background:#11150e;padding:18px 0}.ticker-in{display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;color:var(--muted);font-size:.9rem}.ticker strong{color:var(--lime);letter-spacing:1px}
+section{padding:76px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 35px}.section-head h2{font-size:clamp(2rem,5vw,3.5rem);letter-spacing:-1.5px;margin:12px 0}.section-head p{color:var(--muted);line-height:1.7;margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,#1b2116,#11140f);border:1px solid var(--line);padding:26px;border-radius:18px}.icon{font-size:1.7rem;margin-bottom:14px}.card h3{margin:0 0 10px;font-size:1.1rem}.card p{color:var(--muted);line-height:1.7;margin:0;font-size:.95rem}
+.links-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:24px;align-items:stretch}.banner{width:100%;height:100%;min-height:330px;object-fit:cover;border-radius:20px;border:1px solid var(--line)}.link-panel{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:28px}.link-panel h3{margin:0 0 8px;font-size:1.5rem}.link-panel>p{color:var(--muted);line-height:1.65;margin:0 0 22px}.field{display:block;margin:15px 0}.field label{display:block;color:#dce4d1;font-weight:800;font-size:.85rem;margin-bottom:8px}.inputrow{display:flex;gap:8px}.field input{width:100%;min-width:0;background:#0c0f0a;border:1px solid #3b4631;border-radius:10px;padding:13px 14px;color:white;font:inherit;outline:none}.field input:focus{border-color:var(--lime);box-shadow:0 0 0 3px #c7ff3517}.field input::placeholder{color:#707a67}.help{font-size:.78rem;color:#929c87;margin-top:7px}.save-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.status{min-height:22px;font-size:.85rem;color:var(--lime);margin-top:12px}.how{counter-reset:step}.step{display:flex;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}.step:last-child{border-bottom:0}.num{flex:0 0 42px;height:42px;border-radius:12px;display:grid;place-items:center;background:#26321a;color:var(--lime);font-weight:1000}.step h3{margin:1px 0 6px}.step p{color:var(--muted);line-height:1.6;margin:0}
+.disclaimer{background:#151912;border:1px solid var(--line);padding:20px;border-radius:14px;color:#9ea895;font-size:.82rem;line-height:1.7}.disclaimer strong{color:#dfe8d4}footer{border-top:1px solid var(--line);padding:26px 0;color:#8e9982;font-size:.85rem}.foot{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}.foot strong{color:var(--lime)}
+@media(max-width:780px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding:48px 0 55px;gap:28px}.hero h1{letter-spacing:-3px}.hero-art{max-width:540px;margin:auto}.cards{grid-template-columns:1fr}.links-layout{grid-template-columns:1fr}.banner{min-height:0;aspect-ratio:1.9}.section{padding:55px 0}.link-panel{padding:22px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <nav>
+    <a class="brand" href="#home"><img src="assets/rockcat-mascot.png" alt="Rockcat mascot"><span>ROCK</span>CAT</a>
+    <div class="navlinks"><a href="#about">About</a><a href="#community">Community</a><a href="#token">Token links</a></div>
+    <a class="btn small" href="#community">Join the pack ↗</a>
+  </nav>
+</header>
+<main>
+<section class="wrap hero" id="home">
+  <div>
+    <div class="eyebrow">A little rockstar has arrived</div>
+    <h1>SMALL CAT.<span>BIG ENERGY.</span></h1>
+    <p>Meet Rockcat — a tiny cat made of rock, powered by memes, good vibes, and a community that doesn't take itself too seriously.</p>
+    <div class="actions"><a class="btn" href="#community">Join the community ↗</a><a class="btn outline" href="#token">Token status ↓</a></div>
+    <div class="launch-badge">🟡 TOKEN NOT LAUNCHED YET · BUY LINK COMING SOON</div>
+    <div class="tagline"><span>✦</span> SMALL CAT. BIG ROCK ENERGY.</div>
+  </div>
+  <div class="hero-art"><img src="assets/rockcat-mascot.png" alt="Happy Rockcat, the rock-textured cat mascot"></div>
+</section>
+<div class="ticker"><div class="wrap ticker-in"><strong>ROCKCAT</strong><span>◆</span><span>Built for the memes</span><span>◆</span><span>Community-powered spirit</span><span>◆</span><strong>MEOW WITH ATTITUDE</strong></div></div>
+<section class="wrap" id="about">
+  <div class="section-head"><div class="eyebrow">Meet the mascot</div><h2>Rock solid. <span style="color:var(--lime)">Cat soft.</span></h2><p>Rockcat brings a playful internet-native identity to the crypto meme universe. The real magic is the people who create, share, and build together.</p></div>
+  <div class="cards">
+    <article class="card"><div class="icon">🪨</div><h3>Rock-hard character</h3><p>A one-of-a-kind rocky kitty with a big personality and a little mischief in every meme.</p></article>
+    <article class="card"><div class="icon">🐾</div><h3>Community first</h3><p>Memes, fan art, ideas, and friendly conversations. Everyone can help shape the community.</p></article>
+    <article class="card"><div class="icon">⚡</div><h3>Big meme energy</h3><p>Keep it fun, keep it creative, and let the Rockcat spirit travel across the internet.</p></article>
+  </div>
+</section>
+<section class="wrap" id="community">
+  <div class="links-layout">
+    <img class="banner" src="assets/rockcat-banner.png" alt="Rockcat banner with the phrase Small cat. Big rock energy.">
+    <div class="link-panel">
+      <div class="eyebrow">Find your people</div><h3>Join the Rockcat community</h3>
+      <p>Use the official community links below. Add your real account addresses in the setup fields to make the buttons work.</p>
+      <div class="actions" style="margin-top:0"><a class="btn" id="xButton" href="#" target="_blank" rel="noopener">Follow on X ↗</a><a class="btn outline" id="tgButton" href="#" target="_blank" rel="noopener">Join Telegram ↗</a></div>
+      <p class="help" style="margin-top:14px">If the buttons are not configured yet, fill in the X and Telegram addresses in “Token links” below.</p>
+    </div>
+  </div>
+</section>
+<section class="wrap" id="token">
+  <div class="section-head"><div class="eyebrow">Official links</div><h2>Token launch <span style="color:var(--lime)">status.</span></h2><p>Rockcat has not launched yet. The contract address and buy link will be added after the token is deployed and the details have been checked.</p></div>
+  <div class="card" style="max-width:760px;margin:0 auto 24px;text-align:center">
+    <div class="icon">⏳</div><h3>ROCKCAT — Coming Soon</h3>
+    <p>Launch status: <strong style="color:#ffe680">Not launched</strong><br>Smart contract: <strong>Not available yet</strong><br>Buy link: <strong>Coming soon</strong></p>
+  </div>
+  <div class="links-layout">
+    <div>
+      <div class="step"><div class="num">01</div><div><h3>X account</h3><p>Paste the full profile URL, such as the URL of your official Rockcat account.</p></div></div>
+      <div class="step"><div class="num">02</div><div><h3>Telegram group</h3><p>Paste your public Telegram group or community invite URL.</p></div></div>
+      <div class="step"><div class="num">03</div><div><h3>Smart contract</h3><p>Paste the deployed token contract address. Verify it carefully before sharing it publicly.</p></div></div>
+    </div>
+    <form class="link-panel" id="settingsForm">
+      <h3>Rockcat link settings</h3>
+      <p>These fields are editable. X and Telegram are prefilled. Leave the smart contract empty until the token is actually deployed. No wallet connection or private key is needed.</p>
+      <div class="field"><label for="xUrl">X profile URL</label><input id="xUrl" type="url" value="https://x.com/Rockcatoken" placeholder="https://x.com/YourRockcat" autocomplete="url"></div>
+      <div class="field"><label for="tgUrl">Telegram group URL</label><input id="tgUrl" type="url" value="https://t.me/rockcatChat" placeholder="https://t.me/YourRockcat" autocomplete="url"></div>
+      <div class="field"><label for="contract">Smart contract address (after launch)</label><input id="contract" type="text" placeholder="Not available — token not launched yet"></div>
+      <div class="save-row"><button class="btn" type="submit">Save details</button><button class="btn outline" type="button" id="resetBtn">Clear fields</button></div>
+      <div class="status" id="status" role="status" aria-live="polite"></div>
+      <div class="field"><label>Smart contract</label><div class="inputrow"><input id="contractDisplay" readonly placeholder="Not available yet"><button class="btn small outline" type="button" id="copyBtn">Copy</button></div><div class="help">Do not use or publish a guessed contract address. Add the real address only after deployment, and verify it on the relevant blockchain explorer.</div></div>
+    </form>
+  </div>
+</section>
+<section class="wrap">
+  <div class="disclaimer"><strong>Disclaimer:</strong> Rockcat is presented here as a community meme-token project. This website does not promise profits or investment returns. Crypto assets are volatile and can result in loss. Always verify the official contract address and beware of impersonators. Never share your wallet seed phrase or private keys. The link settings are stored locally in this browser and are not published to a server.</div>
+</section>
+</main>
+<footer><div class="wrap foot"><div><strong>ROCKCAT</strong> — Small cat. Big rock energy.</div><div>Made for the community · DYOR · Stay pawsitive 🐾</div></div></footer>
+<script>
+const keys={x:"rockcat_x_url",tg:"rockcat_telegram_url",contract:"rockcat_contract"};
+const $=id=>document.getElementById(id);
+function safeUrl(value, allowedHosts){
+  try { const u=new URL(value); if(u.protocol!=="https:" && u.protocol!=="http:") return ""; if(allowedHosts && !allowedHosts.includes(u.hostname.toLowerCase())) return ""; return u.href; } catch { return ""; }
+}
+function load(){
+  $("xUrl").value=localStorage.getItem(keys.x)||"https://x.com/Rockcatoken";
+  $("tgUrl").value=localStorage.getItem(keys.tg)||"https://t.me/rockcatChat";
+  $("contract").value=localStorage.getItem(keys.contract)||"";
+  sync();
+}
+function sync(){
+  const x=safeUrl($("xUrl").value,["x.com","www.x.com","twitter.com","www.twitter.com"]);
+  const tg=safeUrl($("tgUrl").value,["t.me","www.t.me","telegram.me","www.telegram.me"]);
+  $("xButton").href=x||"#"; $("tgButton").href=tg||"#";
+  $("xButton").style.opacity=x?"1":".55"; $("tgButton").style.opacity=tg?"1":".55";
+  $("contractDisplay").value=$("contract").value.trim();
+}
+$("settingsForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const x=$("xUrl").value.trim(), tg=$("tgUrl").value.trim(), c=$("contract").value.trim();
+  if(x && !safeUrl(x,["x.com","www.x.com","twitter.com","www.twitter.com"])){ $("status").textContent="Please enter a valid X profile URL."; return; }
+  if(tg && !safeUrl(tg,["t.me","www.t.me","telegram.me","www.telegram.me"])){ $("status").textContent="Please enter a valid Telegram URL."; return; }
+  localStorage.setItem(keys.x,x); localStorage.setItem(keys.tg,tg); localStorage.setItem(keys.contract,c);
+  sync(); $("status").textContent="Saved in this browser. Remember to publish the real official links on your live website.";
+});
+$("resetBtn").addEventListener("click",()=>{Object.values(keys).forEach(k=>localStorage.removeItem(k));$("xUrl").value="";$("tgUrl").value="";$("contract").value="";sync();$("status").textContent="Saved details cleared from this browser.";});
+$("copyBtn").addEventListener("click",async()=>{const v=$("contractDisplay").value;if(!v){$("status").textContent="Add a contract address first.";return;}try{await navigator.clipboard.writeText(v);$("status").textContent="Contract address copied.";}catch{$("contractDisplay").select();document.execCommand("copy");$("status").textContent="Contract address selected/copied if your browser allows it.";}})
+load();
+</script>
+</body>
+</html>
